@@ -1,5 +1,4 @@
 cd vscode
-git pull origin master
 
 yarn
 

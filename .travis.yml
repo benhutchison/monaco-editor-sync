@@ -8,7 +8,7 @@ before_install:
 - cat .gitmodules
 - git submodule update --init --recursive
 
-bash: "./extract_monaco_sources.sh"
+./extract_monaco_sources.sh
 
 env:
   global:
