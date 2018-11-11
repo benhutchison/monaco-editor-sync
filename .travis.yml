@@ -1,4 +1,3 @@
-dist: precise
 
 language: generic
 
@@ -6,6 +5,8 @@ git:
   submodules: false
 
 before_install:
+- sudo apt-get update
+- sudo apt-get install -y xkbfile
 - sed -i "s/git@github.com:/https:\/\/benhutchison:$GHTOK@github.com\//" .gitmodules
 - cat .gitmodules
 - git submodule update --init --recursive
