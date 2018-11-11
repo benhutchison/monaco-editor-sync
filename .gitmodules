@@ -1,0 +1,6 @@
+[submodule "monaco-editor-standalone"]
+	path = monaco-editor-standalone
+	url = git@github.com:benhutchison/monaco-editor-standalone.git
+[submodule "vscode"]
+	path = vscode
+	url = https://github.com/Microsoft/vscode.git

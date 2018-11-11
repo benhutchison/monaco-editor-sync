@@ -4,13 +4,10 @@ The [Monaco editor sources](https://github.com/Microsoft/monaco-editor) are actu
 
 This repo is intended to hold a daily Travis CI job that:
 
-- Clones https://github.com/benhutchison/monaco-editor-standlone and queries the latest commit on master
-- Clones https://github.com/Microsoft/vscode/ and for each new commit on master, 
-  - checks it out
-  - runs Gulp task `extract-editor-src`
-  - commits changes to repo `monaco-editor-standlone`
-- Pushes `monaco-editor-standlone`
+- Pulls git submodule https://github.com/Microsoft/vscode/
+- runs Gulp task `extract-editor-src`
+- commits changes to repo `monaco-editor-standlone`
+- Pushes to git submodule `monaco-editor-standlone`
 
-Many commits will be no-ops since not all changes in the source repo affect the monaco editor code.
 
-The intent is to provide a dervived repo that can be forked & then customized. Of course, if you choose to fork you'll be accepting the ongoing maintenance of reconciling upstream changes with your modifications. But at least you'll have that choice.
+The intent is to provide a derived repo that can be forked & then customized. Of course, if you choose to fork you'll be accepting the ongoing maintenance of reconciling upstream changes with your modifications. But at least you'll have that choice.

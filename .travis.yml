@@ -1,0 +1,3 @@
+language: generic
+
+bash: ./extract_monaco_sources.sh
