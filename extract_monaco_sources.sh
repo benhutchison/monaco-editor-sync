@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 cd vscode
 
@@ -14,4 +15,4 @@ cp -r ../vscode/out-monaco-editor-core .
 
 git commit -am"Changes on $(date +'%Y-%m-%d')"
 
-git push origin master
+#git push origin master

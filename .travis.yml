@@ -7,6 +7,8 @@ before_install:
 - sed -i "s/git@github.com:/https:\/\/benhutchison:$GHTOK@github.com\//" .gitmodules
 - cat .gitmodules
 - git submodule update --init --recursive
+- curl -o- -L https://yarnpkg.com/install.sh | bash
+- export PATH="$HOME/.yarn/bin:$PATH"
 
 script: bash ./extract_monaco_sources.sh
 
