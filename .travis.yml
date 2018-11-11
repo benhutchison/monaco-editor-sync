@@ -6,7 +6,7 @@ git:
 
 before_install:
 - sudo apt-get update
-- sudo apt-get install -y xkbfile
+- sudo apt-get install -y libxkbfile
 - sed -i "s/git@github.com:/https:\/\/benhutchison:$GHTOK@github.com\//" .gitmodules
 - cat .gitmodules
 - git submodule update --init --recursive
